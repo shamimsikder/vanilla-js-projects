@@ -40,6 +40,38 @@ function checkRequired(inputArr){
 
 }
 
+//Check Input Length
+
+function checkLength(input, min, max){
+
+    if(input.value.length < min){
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+    }
+
+    else if(input.value.length > max){
+        showError(input, `${getFieldName(input)} must be less than ${max} character`);
+    }
+
+    else{
+        showSuccess(input);
+    }
+
+}
+
+//Check Password Match
+
+function checkPasswordMatch(input1, input2){
+
+    if(input1.value !== input2.value){
+        showError(input2, 'Password do not match');
+    }
+
+    else if(input1.value.length && input2.value.length < 6){
+        showError(input2, "Password must be at least 6 characters")
+    }
+
+}
+
 //Get Field Name
 
 function getFieldName(input){
@@ -54,6 +86,9 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     checkRequired([username, email, password, password2]);
+    checkLength(username, 3, 25);
+    checkLength(password, 6, 15);
+    checkPasswordMatch(password, password2);
 
 });
 
