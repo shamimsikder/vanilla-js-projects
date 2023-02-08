@@ -22,8 +22,42 @@ function showSuccess(input, message){
 
 }
 
+// Check Required Fields
+
+function checkRequired(inputArr){
+
+    inputArr.forEach(function(input) {
+        
+        if(input.value.trim() === ''){
+            showError(input, `${getFieldName(input)} is Required`);
+        }
+
+        else{
+            showSuccess(input);
+        }
+
+    });
+
+}
+
+//Get Field Name
+
+function getFieldName(input){
+
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+
+}
+
 // Event Listeners
 form.addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+    checkRequired([username, email, password, password2]);
+
+});
+
+/*form.addEventListener('submit', function(e){
 
     e.preventDefault();
 
@@ -59,4 +93,4 @@ form.addEventListener('submit', function(e){
         showSuccess(password2);
     }
 
-});
+});*/
