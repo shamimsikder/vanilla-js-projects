@@ -13,6 +13,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Form Validator](https://js-form-validator23.netlify.app/)
  - [Menu Slider & Modal](https://menu-slider-and-modal23.netlify.app/)
  - [Gradient Generator](https://gradient-generator23.netlify.app/)
+ - [BMI Calculator](https://bmi-calculator23.netlify.app/)
 
 
 ## Getting Started
