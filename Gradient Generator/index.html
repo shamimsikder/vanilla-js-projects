@@ -8,14 +8,32 @@
     
     <title>Gradient Generator</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <!--Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body>
+<body id="gradient">
 
-    
+    <main>
+
+        <section class="flex flex-col items-center justify-center font-mono tracking-wider">
+
+            <h1 class="text-gray-900 text-5xl text-center font-semibold uppercase mt-20 mb-10">Gradient Generator</h1>
+
+            <div>
+                <input id="color1" type="color" name="color1" value="#94d20f">
+                <input id="color2" type="color" name="color2" value="#12ca40">
+            </div>
+
+            <h2 class="mt-10 text-center text-4xl text-gray-900 font-semibold uppercase">Current CSS Gradient:</h2>
+            <h3 id="css" class="text-2xl text-center text-gray-900 font-semibold uppercase"></h3>
+
+        </section>
+
+    </main>
 
     <!--JavaScript-->
     <script src="script.js"></script>
