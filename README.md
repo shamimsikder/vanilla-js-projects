@@ -12,6 +12,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Basic Calculator](https://js-basic-calculator23.netlify.app/)
  - [Form Validator](https://js-form-validator23.netlify.app/)
  - [Menu Slider & Modal](https://menu-slider-and-modal23.netlify.app/)
+ - [Gradient Generator](https://gradient-generator23.netlify.app/)
 
 
 ## Getting Started
@@ -30,7 +31,7 @@ Step by step instructions on how to install the project and get it running.
 
 * Clone the repository
 
-```http
+```
   $ git clone https://github.com/your-username/project-name.git
 ```
 
