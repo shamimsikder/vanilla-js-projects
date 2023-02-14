@@ -13,15 +13,45 @@
 
 </head>
 
-<body class="h-screen bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(37,44,39)] flex justify-center items-center">
+<body class="h-screen bg-gradient-to-r from-[rgb(42,44,43)] to-[rgb(77,79,74)] flex justify-center items-center">
     
-    <main>
+    <main class="bg-slate-50 max-w-7xl w-full mx-auto rounded-lg shadow-lg">
 
+        <section class="py-10">
+
+            <div class="text-center mb-10">
+                <h1 class="text-5xl mb-4 font-semibold text-[rgb(77,79,74)]">Shopping List</h1>
+                <p class="text-xl mb-4 font-semibold text-[rgb(77,79,74)]">Add your shopping items</p>
+            </div>
+
+            <div class="flex md:gap-0 gap-4 flex-col md:flex-row justify-between items-center mb-10 w-full max-w-6xl mx-auto p-2 md:p-0">
+                <input class="outline-none border-2 border-slate-200 text-slate-500 px-3 py-1 rounded-sm w-full md:w-1/2" type="text" placeholder="Item..">
+                <button id="add-item-btn" class="px-4 py-2 bg-black text-slate-200 rounded-md ">+ Add Item</button>
+            </div>
+
+            <div class="w-full max-w-6xl mx-auto bg-slate-200 rounded-md p-2 md:p-0">
+
+                <ul id="list-item" class="px-3 py-4">
+                    
+                    <li class="bg-white rounded-md px-4 py-2 list-none flex justify-between items-center mb-5">
+                        <p>Item</p>
+                        <button class="bg-red-500 px-4 py-2 rounded-md text-white">Delete</button>
+                    </li>
+
+                </ul>
+
+                <div class="px-3 py-4">
+                    <button id="clear-all-btn" class="px-4 py-2 bg-black text-slate-200 rounded-md ">Clear All</button>
+                </div>
+
+            </div>
+
+        </section>
         
     </main>
 
     <!--JavaScript-->
-    <script src=".js"></script>
+    <script src="script.js"></script>
 
 </body>
 
