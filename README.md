@@ -14,6 +14,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Menu Slider & Modal](https://menu-slider-and-modal23.netlify.app/)
  - [Gradient Generator](https://gradient-generator23.netlify.app/)
  - [BMI Calculator](https://bmi-calculator23.netlify.app/)
+ - [Shopping List](https://shopping-list23.netlify.app/)
 
 
 ## Getting Started
