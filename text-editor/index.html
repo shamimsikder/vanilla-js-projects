@@ -14,19 +14,61 @@
     <!--Font Awesome JS-->
     <script src="https://kit.fontawesome.com/10abd8c763.js" crossorigin="anonymous"></script>
 
-    <!--Favorite Icon Link-->
+    <!--Favicon Link-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
-<body class="bg-slate-200 flex justify-center items-center">
-    
-    <main>
+<body class=" bg-slate-200">
 
-        <section>
+    <main class="h-screen flex flex-col justify-center items-center">
 
-           
-            
+        <div>
+            <h1 class="text-4xl font-semibold">Text Editor</h1>
+            <p class="text-lg text-center mt-5 mb-32">Free Text Editor</p>
+        </div>
+
+        <section class="bg-white p-4 max-w-6xl w-full rounded-lg mx-auto">
+
+            <div class="flex items-center justify-center gap-8 mb-2">
+
+                <!--Font Weight-->
+                <div class="flex items-center gap-4">
+                    <button><i class="fa-solid fa-bold"></i></button>
+                    <button><i class="fa-solid fa-italic"></i></button>
+                    <button><i class="fa-solid fa-underline"></i>  </button>
+                </div>
+                <!--Text Align-->
+                <div class="flex items-center gap-4">
+                    <button><i class="fa-solid fa-align-left"></i></button>
+                    <button><i class="fa-solid fa-align-center"></i></button>
+                    <button><i class="fa-solid fa-align-right"></i></button>
+                </div>
+                <!--Text Transformation-->
+                <select class="outline-none border-2 border-slate-200 rounded-sm" name="" id="">
+                    <option value="none">None</option>
+                    <option value="capitalize">Capitalize</option>
+                    <option value="uppercase">Uppercase</option>
+                    <option value="lowercase">Lowercase</option>
+                </select>
+                <!--Font Size & Font Color-->
+                <div class="flex items-center gap-4">
+                    <label for="">font-size:</label>
+                    <input class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="1" placeholder="Font Size" name="" id="">
+                    <input type="color">
+                </div>
+
+            </div>
+
+            <!--Text Area-->
+
+            <div>
+
+                <hr>
+                <textarea class="outline-none mt-2 border-2 border-slate-200 p-4" name="" id="" cols="145" rows="10" placeholder="Your Text ..........."></textarea>
+
+            </div>
+        
         </section>
 
     </main>
