@@ -14,3 +14,5 @@ document.getElementById('text-transformation').addEventListener('change', textTr
 
 // Text Color
 document.getElementById('color').addEventListener('input', colorChange)
+
+document.getElementById('font-size-input').addEventListener('input', fontSizeChange)
