@@ -11,3 +11,6 @@ document.getElementById('right-align-btn').addEventListener('click', rightTextAl
 
 // Text Transform
 document.getElementById('text-transformation').addEventListener('change', textTransform)
+
+// Text Color
+document.getElementById('color').addEventListener('input', colorChange)
