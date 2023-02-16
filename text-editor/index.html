@@ -8,7 +8,7 @@
     
     <title>Text Editor</title>
 
-    <!--Tailwind CSS-->
+    <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
     
     <!--Tailwind CSS-->
@@ -24,40 +24,56 @@
 
 <body class=" bg-slate-200">
 
-    <main class="md:h-screen flex flex-col justify-center items-center">
+    <main class="md:h-screen flex flex-col justify-center items-center mt-20 md:mt-0">
 
         <div>
-            <h1 class="text-4xl font-semibold">Text Editor</h1>
-            <p class="text-lg text-center mt-5 mb-32">Free Text Editor</p>
+            <h1 class="text-4xl font-semibold mb-20"> <span class="text-purple-900">Free</span> Text Editor</h1>
         </div>
 
-        <section class="bg-white p-4 max-w-6xl w-full rounded-lg mx-auto">
+        <section class="bg-white p-4 max-w-7xl w-full rounded-lg mx-auto">
 
             <div class="flex flex-col md:flex-row items-center justify-around gap-8 mb-2">
 
                 <!--Font Weight-->
-                <div class="flex items-center gap-4">
+                <div class="flex justify-center items-center gap-4">
                     <button id="bold-btn"><i class="fa-solid fa-bold"></i></button>
                     <button id="italic-btn"><i class="fa-solid fa-italic"></i></button>
                     <button id="underline-btn"><i class="fa-solid fa-underline"></i>  </button>
                 </div>
+
                 <!--Text Align-->
-                <div class="flex items-center gap-4">
+                <div class="flex justify-center items-center gap-4">
                     <button id="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
                     <button id="center-align-btn"><i class="fa-solid fa-align-center"></i></button>
                     <button id="right-align-btn"><i class="fa-solid fa-align-right"></i></button>
                 </div>
+
+                <!--Font Family-->
+                <div  class="flex justify-center items-center gap-4">
+                    <label for="">Font-family:</label>
+                    <select id="font-family" class="outline-none border-2 border-slate-200 rounded-sm">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                </div>
+
                 <!--Text Transformation-->
-                <select id="text-transformation" class="outline-none border-2 border-slate-200 rounded-sm" name="" id="">
-                    <option value="none">None</option>
-                    <option value="capitalize">Capitalize</option>
-                    <option value="uppercase">Uppercase</option>
-                    <option value="lowercase">Lowercase</option>
-                </select>
+                <div class="flex justify-center items-center gap-4">
+                    <label for="">Text-transformation:</label>
+                    <select id="text-transformation" class="outline-none border-2 border-slate-200 rounded-sm">
+                        <option value="none">None</option>
+                        <option value="capitalize">Capitalize</option>
+                        <option value="uppercase">Uppercase</option>
+                        <option value="lowercase">Lowercase</option>
+                    </select>
+                </div>
+
                 <!--Font Size & Font Color-->
-                <div class="flex items-center gap-4">
-                    <label for="">font-size:</label>
-                    <input id="font-size-input" class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="14" placeholder="Font Size">
+                <div class="flex justify-center items-center gap-4">
+                    <label for="">Font-size:</label>
+                    <input id="font-size-input" class="outline-none border-2 border-slate-200 rounded-sm w-1/2 md:w-[35%] px-2 text-center" type="number" value="14" placeholder="Font Size">
                     <input id="color" type="color">
                 </div>
 
@@ -81,6 +97,7 @@
     <script src="./js/text-align.js"></script>
     <script src="./js/font-size-and-color.js"></script>
     <script src="./js/font-transformation.js"></script>
+    <script src="./js/font-family.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
