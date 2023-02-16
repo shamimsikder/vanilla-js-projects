@@ -30,22 +30,22 @@
 
         <section class="bg-white p-4 max-w-6xl w-full rounded-lg mx-auto">
 
-            <div class="flex items-center justify-center gap-8 mb-2">
+            <div class="flex items-center justify-around gap-8 mb-2">
 
                 <!--Font Weight-->
                 <div class="flex items-center gap-4">
-                    <button><i class="fa-solid fa-bold"></i></button>
-                    <button><i class="fa-solid fa-italic"></i></button>
-                    <button><i class="fa-solid fa-underline"></i>  </button>
+                    <button id="bold-btn"><i class="fa-solid fa-bold"></i></button>
+                    <button id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                    <button id="underline-btn"><i class="fa-solid fa-underline"></i>  </button>
                 </div>
                 <!--Text Align-->
                 <div class="flex items-center gap-4">
-                    <button><i class="fa-solid fa-align-left"></i></button>
-                    <button><i class="fa-solid fa-align-center"></i></button>
-                    <button><i class="fa-solid fa-align-right"></i></button>
+                    <button id="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="center-align-btn"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="right-align-btn"><i class="fa-solid fa-align-right"></i></button>
                 </div>
                 <!--Text Transformation-->
-                <select class="outline-none border-2 border-slate-200 rounded-sm" name="" id="">
+                <select id="font-transformation" class="outline-none border-2 border-slate-200 rounded-sm" name="" id="">
                     <option value="none">None</option>
                     <option value="capitalize">Capitalize</option>
                     <option value="uppercase">Uppercase</option>
@@ -54,8 +54,8 @@
                 <!--Font Size & Font Color-->
                 <div class="flex items-center gap-4">
                     <label for="">font-size:</label>
-                    <input class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="1" placeholder="Font Size" name="" id="">
-                    <input type="color">
+                    <input id="font-size-input" class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="1" placeholder="Font Size">
+                    <input id="color" type="color">
                 </div>
 
             </div>
@@ -65,7 +65,7 @@
             <div>
 
                 <hr>
-                <textarea class="outline-none mt-2 border-2 border-slate-200 p-4" name="" id="" cols="145" rows="10" placeholder="Your Text ..........."></textarea>
+                <textarea id="input-field"  class="outline-none mt-2 p-4" cols="80" rows="10" placeholder="Your Text ..........."></textarea>
 
             </div>
         
@@ -74,7 +74,11 @@
     </main>
 
     <!--JavaScript-->
-    <script src=".js"></script>
+    <script src="./js/text.js"></script>
+    <script src="./js/text-align.js"></script>
+    <script src="./js/font-size-and-color.js"></script>
+    <script src="./js/font-transformation.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
