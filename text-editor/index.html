@@ -9,6 +9,9 @@
     <title>Text Editor</title>
 
     <!--Tailwind CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!--Font Awesome JS-->
@@ -21,7 +24,7 @@
 
 <body class=" bg-slate-200">
 
-    <main class="h-screen flex flex-col justify-center items-center">
+    <main class="md:h-screen flex flex-col justify-center items-center">
 
         <div>
             <h1 class="text-4xl font-semibold">Text Editor</h1>
@@ -30,7 +33,7 @@
 
         <section class="bg-white p-4 max-w-6xl w-full rounded-lg mx-auto">
 
-            <div class="flex items-center justify-around gap-8 mb-2">
+            <div class="flex flex-col md:flex-row items-center justify-around gap-8 mb-2">
 
                 <!--Font Weight-->
                 <div class="flex items-center gap-4">
@@ -54,7 +57,7 @@
                 <!--Font Size & Font Color-->
                 <div class="flex items-center gap-4">
                     <label for="">font-size:</label>
-                    <input id="font-size-input" class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="1" placeholder="Font Size">
+                    <input id="font-size-input" class="outline-none border-2 border-slate-200 rounded-sm w-[35%] px-2 text-center" type="number" value="14" placeholder="Font Size">
                     <input id="color" type="color">
                 </div>
 
@@ -65,7 +68,7 @@
             <div>
 
                 <hr>
-                <textarea id="input-field"  class="outline-none mt-2 p-4" cols="80" rows="10" placeholder="Your Text ..........."></textarea>
+                <textarea id="input-field"  class="outline-none mt-2 p-4" rows="10" placeholder="Your Text ..........."></textarea>
 
             </div>
         
