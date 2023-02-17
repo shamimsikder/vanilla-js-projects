@@ -6,8 +6,9 @@ A collection of small and simple projects built with vanilla JavaScript.
 ## Table of Contents
 
 * Projects List
-* Getting Started
 * Screenshots
+* Getting Started
+
 ## Projects List
 
  - [Basic Calculator](https://js-basic-calculator23.netlify.app/)
@@ -17,30 +18,6 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [BMI Calculator](https://bmi-calculator23.netlify.app/)
  - [Shopping List](https://shopping-list23.netlify.app/)
  - [Text Editor](https://text-editor23.netlify.app/)
- 
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-List any required tools or libraries needed to install and run the project.
-
-* A modern web browser
-* A text editor
-
-#### Installation
-
-Step by step instructions on how to install the project and get it running.
-
-* Clone the repository
-
-```
-  $ git clone https://github.com/your-username/project-name.git
-```
-
-* Open the index.html file in your web browser to run the project.
 
 ## Screenshots
 
@@ -64,3 +41,25 @@ Step by step instructions on how to install the project and get it running.
  
  ### Text Editor
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Text%20Editor.PNG)
+ 
+ ## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+List any required tools or libraries needed to install and run the project.
+
+* A modern web browser
+* A text editor
+
+#### Installation
+
+Step by step instructions on how to install the project and get it running.
+
+* Clone the repository
+
+```
+  $ git clone https://github.com/your-username/project-name.git
+```
+
+* Open the index.html file in your web browser to run the project.
