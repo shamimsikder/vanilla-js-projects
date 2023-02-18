@@ -1,0 +1,8 @@
+.linear-gradient{
+    background: linear-gradient(rgba(0, 0, 0, 0.637),
+    rgba(0, 0, 0, 0.582)),url('./img/img.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
