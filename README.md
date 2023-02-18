@@ -6,7 +6,9 @@ A collection of small and simple projects built with vanilla JavaScript.
 ## Table of Contents
 
 * Projects List
+* Screenshots
 * Getting Started
+
 ## Projects List
 
  - [Basic Calculator](https://js-basic-calculator23.netlify.app/)
@@ -15,9 +17,32 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Gradient Generator](https://gradient-generator23.netlify.app/)
  - [BMI Calculator](https://bmi-calculator23.netlify.app/)
  - [Shopping List](https://shopping-list23.netlify.app/)
+ - [Text Editor](https://text-editor23.netlify.app/)
 
+## Screenshots
 
-## Getting Started
+ ### Calculator
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Calculator.PNG)
+ 
+ ### Form Validator
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Form%20Validator.PNG)
+ 
+ ### Menu Slider & Modal
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Modal%20%26%20Slider.PNG)
+ 
+ ### Gradient Generator
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Gradient%20Generator.PNG)
+ 
+ ### BMI Calculator
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/BMI%20Calculator.PNG)
+ 
+ ### Shopping List
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Shopping%20List.PNG)
+ 
+ ### Text Editor
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Text%20Editor.PNG)
+ 
+ ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -38,6 +63,3 @@ Step by step instructions on how to install the project and get it running.
 ```
 
 * Open the index.html file in your web browser to run the project.
-
-
-
