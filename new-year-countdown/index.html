@@ -19,31 +19,36 @@
 
     <main class="linear-gradient">
 
-        <section id="year" class="h-full flex flex-col justify-center items-center text-white">
+        <section class="h-full flex flex-col justify-center items-center text-white">
 
-            <h1 class="text-6xl font-semibold mb-10">New Year Countdown</h1>
+            <h1 class="text-7xl font-semibold mb-10">New Year Countdown</h1>
 
-            <div id="countdown" class="flex justify-center gap-5 items-center">
+            <div id="countdown"  class="hidden">
 
-                <div id="days" class="flex flex-col justify-center items-center gap-5">
-                    <h1 class="text-4xl font-bold">00</h1>
-                    <small class="text-xl">days</small>
+                <div class="flex justify-center gap-5 items-center mb-15">
+
+                    <div  class="flex flex-col justify-center items-center gap-5">
+                        <h1 id="days" class="text-5xl font-bold">00</h1>
+                        <small class="text-xl">days</small>
+                    </div>
+    
+                    <div  class="flex flex-col justify-center items-center gap-5">
+                        <h1 id="hours" class="text-5xl font-bold">00</h1>
+                        <small class="text-xl">hours</small>
+                    </div>
+    
+                    <div  class="flex flex-col justify-center items-center gap-5">
+                        <h1 id="minutes" class="text-5xl font-bold">00</h1>
+                        <small class="text-xl">minutes</small>
+                    </div>
+    
+                    <div  class="flex flex-col justify-center items-center gap-5">
+                        <h1 id="seconds" class="text-5xl font-bold">00</h1>
+                        <small class="text-xl">seconds</small>
+                    </div>
+    
                 </div>
-
-                <div id="hours" class="flex flex-col justify-center items-center gap-5">
-                    <h1 class="text-4xl font-bold">00</h1>
-                    <small class="text-xl">hours</small>
-                </div>
-
-                <div id="minutes" class="flex flex-col justify-center items-center gap-5">
-                    <h1 class="text-4xl font-bold">00</h1>
-                    <small class="text-xl">minutes</small>
-                </div>
-
-                <div id="seconds" class="flex flex-col justify-center items-center gap-5">
-                    <h1 class="text-4xl font-bold">00</h1>
-                    <small class="text-xl">seconds</small>
-                </div>
+    
 
             </div>
 
