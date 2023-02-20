@@ -14,11 +14,46 @@
     <!--Font Awesome Script-->
     <script src="https://kit.fontawesome.com/10abd8c763.js" crossorigin="anonymous"></script>
 
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
-<body>
+<body class="bg-[#28282B]">
     
-    <main>
+    <main class="w-full max-w-6xl mx-auto">
+
+        <h1 class="text-5xl text-center text-teal-50 mt-10 mb-20">Welcome to <span class="text-teal-600">Expenses Tracker</span></h1>
+        
+        <section class="grid grid-cols-2">
+
+            <div class="flex flex-col gap-10">
+
+                <!--Budget Section-->
+                <div class="bg-teal-600 p-10 rounded-lg flex flex-col gap-5">
+
+                    <h1 class="text-teal-50 text-3xl">Budget</h1>
+                    <input class="px-3 py-2 rounded-md outline-none text-teal-600" type="text" placeholder="Your Budget">
+                    <button class="px-3 py-1 rounded-md bg-teal-50 text-teal-600 w-1/3">Add Budget</button>
+
+                </div>
+
+                <!--Expenses Section-->
+                <div class="bg-teal-600 p-10 rounded-lg flex flex-col gap-5">
+
+                    <h1 class="text-teal-50 text-3xl">Expenses Name</h1>
+                    <input class="px-3 py-2 rounded-md outline-none text-teal-600" type="text" placeholder="Expenses Name">
+                    <h1 class="text-teal-50 text-3xl">Expenses Amount</h1>
+                    <input class="px-3 py-2 rounded-md outline-none text-teal-600" type="text" placeholder="Expenses Amount">
+                    <button class="px-3 py-1 rounded-md bg-teal-50 text-teal-600 w-1/3">Add Expenses</button>
+
+                </div>
+
+            </div>
+
+            <div></div>
+
+        </section>
 
     </main>
 
