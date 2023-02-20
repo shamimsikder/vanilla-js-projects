@@ -11,3 +11,15 @@ function getInputFieldValue(element){
     return parseFloat(value)
 
 }
+
+function getInputTitle(element){
+
+    const input= document.getElementById(element)
+
+    const inputString = input.value
+
+    input.value = ''
+
+    return inputString
+
+}
