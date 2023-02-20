@@ -18,6 +18,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [BMI Calculator](https://bmi-calculator23.netlify.app/)
  - [Shopping List](https://shopping-list23.netlify.app/)
  - [Text Editor](https://text-editor23.netlify.app/)
+  - [Breathing Exercise](https://breathing-exercise.netlify.app/)
 
 ## Screenshots
 
@@ -41,6 +42,9 @@ A collection of small and simple projects built with vanilla JavaScript.
  
  ### Text Editor
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Text%20Editor.PNG)
+ 
+  ### Breathing Exercise
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Breathing%20Exercise.PNG)
  
  ## Getting Started
 
