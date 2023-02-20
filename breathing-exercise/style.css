@@ -85,7 +85,7 @@ body {
 }
 
 
-.container.grow {
+.circle-container.circle-grow {
     animation: grow 3s linear forwards;
   }
   
@@ -99,7 +99,7 @@ body {
     }
   }
   
-  .container.shrink {
+  .circle-container.circle-shrink {
     animation: shrink 3s linear forwards;
   }
   
