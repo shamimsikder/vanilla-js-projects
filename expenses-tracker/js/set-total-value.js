@@ -6,7 +6,7 @@ function setTitleName(input){
 
 }
 
-// Set Expense, Budget & Total Balance Amount
+// Set Expense, Budget & Total Balance Amount.
 function addAmount(element, input){
 
     const previousAmount = document.getElementById(element)
@@ -19,7 +19,7 @@ function addAmount(element, input){
 
 }
 
-// Decrease Expense & Total Balance
+// Decrease Expense & Total Balance.
 function addExpense(element, input){
 
     const previousAmount = document.getElementById(element)

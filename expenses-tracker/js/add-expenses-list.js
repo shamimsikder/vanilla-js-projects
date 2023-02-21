@@ -1,4 +1,4 @@
-// Expenses List Creating Function
+// Expenses List Creating Function.
 function addExpenseList(expenseName, expense){
 
     const itemContainer = document.getElementById('expense-list');
@@ -39,7 +39,7 @@ function addExpenseList(expenseName, expense){
     itemContainer.appendChild(item);
     
 
-    // Edit Button's Functionality
+    // Edit Button's Functionality.
     item.querySelector('#edit-btn').addEventListener('click', function() {
     
         const expenseNameInput = document.getElementById('expense-name-input-field');
@@ -55,7 +55,7 @@ function addExpenseList(expenseName, expense){
     
     });
 
-    // Delete Button's Functionality
+    // Delete Button's Functionality.
     item.querySelector('#delete-btn').addEventListener('click', function(){
 
         item.remove()
