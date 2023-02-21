@@ -35,5 +35,31 @@ function addExpensesList(expensesName, expenses){
     `;
 
     itemContainer.appendChild(item);
+    
+    item.querySelector('#edit-btn').addEventListener('click', function() {
+    
+        const expensesNameInput = document.getElementById('expenses-name-input-field');
+        const expensesInput = document.getElementById('expenses-input-field');
+    
+        expensesNameInput.value = expensesName;
+        expensesInput.value = expenses;
+        
+        addAmount('total-balance',expenses)
+        addExpenses('total-expenses',expenses)
+        
+        item.remove();
+    
+    });
+
+    item.querySelector('#delete-btn').addEventListener('click', function(){
+
+        item.remove()
+
+        addAmount('total-balance',expenses)
+        addExpenses('total-expenses',expenses)
+
+    })
+
 
 }
+
