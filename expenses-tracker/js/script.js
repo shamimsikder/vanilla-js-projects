@@ -18,5 +18,7 @@ document.getElementById('add-expenses-btn').addEventListener('click', function()
     const expenses = getInputFieldValue('expenses-input-field')
 
     addAmount('total-expenses',expenses)
+    addExpenses('total-balance',expenses)
+    addExpensesList(expensesName, expenses)
 
 })

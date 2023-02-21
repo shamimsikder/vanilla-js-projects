@@ -16,6 +16,16 @@ function addAmount(element, input){
 
     previousAmount.innerText = totalAmount
 
-    console.log(totalAmount)
+}
+
+function addExpenses(element, input){
+
+    const previousAmount = document.getElementById(element)
+    const previousAmountString = previousAmount.innerText
+    const previousAmountValue = parseInt(previousAmountString)
+
+    const totalAmount = previousAmountValue - input
+
+    previousAmount.innerText = totalAmount
 
 }
