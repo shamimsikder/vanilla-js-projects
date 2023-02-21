@@ -4,7 +4,8 @@ document.getElementById('add-budget-btn').addEventListener('click', function(){
 
     const budget = getInputFieldValue('budget-input-field')
 
-    setTotal('total-budget',budget)
+    addAmount('total-budget',budget)
+    addAmount('total-balance',budget)
 
 })
 
@@ -16,6 +17,6 @@ document.getElementById('add-expenses-btn').addEventListener('click', function()
 
     const expenses = getInputFieldValue('expenses-input-field')
 
-    setTitleName(expensesName)
+    addAmount('total-expenses',expenses)
 
 })

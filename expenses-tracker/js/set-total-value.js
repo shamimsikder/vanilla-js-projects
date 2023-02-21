@@ -1,15 +1,21 @@
-function setTotal(element, input){
+function setTitleName(input){
 
-    const totalBalance = document.getElementById('total-balance')
+    const titleName = document.getElementById('expenses-name');
 
-    const previousBalanceString = totalBalance.innerText
-    const previousBalance = parseInt(previousBalanceString)
+    titleName.innerText = input;
 
-    const setValue = document.getElementById(element)
+}
 
-    const newBalance = previousBalance + parseFloat(setValue.innerText)
+function addAmount(element, input){
 
-    setValue.innerText = input
-    totalBalance.innerText = newBalance
+    const previousAmount = document.getElementById(element)
+    const previousAmountString = previousAmount.innerText
+    const previousAmountValue = parseInt(previousAmountString)
+
+    const totalAmount = previousAmountValue + input
+
+    previousAmount.innerText = totalAmount
+
+    console.log(totalAmount)
 
 }
