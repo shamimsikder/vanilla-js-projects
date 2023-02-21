@@ -5,11 +5,13 @@ function addExpensesList(expensesName, expenses){
 
     item.classList.add('bg-teal-50', 'p-4', 'rounded-md', 'flex', 'flex-col', 'gap-2', 'mb-5')
 
+    const date = new Date();
+    const dateString = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+
+
     item.innerHTML = `
     
-    
-
-        <h1 class="font-semibold text-teal-600 text-lg ml-3"></h1>
+        <h1 class="font-semibold text-teal-600 text-lg ml-3">${dateString}</h1>
 
         <div class="border-teal-600 border-l-4 flex justify-between items-center">
 
@@ -29,7 +31,6 @@ function addExpensesList(expensesName, expenses){
             </div>
 
         </div>
-   
     
     `;
 
