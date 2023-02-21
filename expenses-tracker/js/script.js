@@ -11,14 +11,14 @@ document.getElementById('add-budget-btn').addEventListener('click', function(){
 
 // Add Expenses
 
-document.getElementById('add-expenses-btn').addEventListener('click', function(){
+document.getElementById('add-expense-btn').addEventListener('click', function(){
 
-    const expensesName = getInputTitle('expenses-name-input-field')
+    const expenseName = getInputTitle('expense-name-input-field')
 
-    const expenses = getInputFieldValue('expenses-input-field')
+    const expense = getInputFieldValue('expense-input-field')
 
-    addAmount('total-expenses',expenses)
-    addExpenses('total-balance',expenses)
-    addExpensesList(expensesName, expenses)
+    addAmount('total-expense',expense)
+    addExpense('total-balance',expense)
+    addExpenseList(expenseName, expense)
 
 })

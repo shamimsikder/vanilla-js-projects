@@ -1,12 +1,12 @@
 function setTitleName(input){
 
-    const titleName = document.getElementById('expenses-name');
+    const titleName = document.getElementById('expense-name');
 
     titleName.innerText = input;
 
 }
 
-// Set Expenses, Budget & Total Balance Amount
+// Set Expense, Budget & Total Balance Amount
 function addAmount(element, input){
 
     const previousAmount = document.getElementById(element)
@@ -20,7 +20,7 @@ function addAmount(element, input){
 }
 
 // Decrease Expense & Total Balance
-function addExpenses(element, input){
+function addExpense(element, input){
 
     const previousAmount = document.getElementById(element)
     const previousAmountString = previousAmount.innerText

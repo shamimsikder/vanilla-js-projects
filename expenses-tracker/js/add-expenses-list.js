@@ -1,7 +1,7 @@
 // Expenses List Creating Function
-function addExpensesList(expensesName, expenses){
+function addExpenseList(expenseName, expense){
 
-    const itemContainer = document.getElementById('expenses-list');
+    const itemContainer = document.getElementById('expense-list');
     const item = document.createElement('div');
 
     item.classList.add('bg-teal-50', 'p-4', 'rounded-md', 'flex', 'flex-col', 'gap-2', 'mb-5')
@@ -17,8 +17,8 @@ function addExpensesList(expensesName, expenses){
 
         <div class="border-teal-600 border-l-4 flex justify-between items-center">
 
-            <h1 id="expenses-name" class="font-semibold text-teal-600 ml-2">${expensesName}</h1>
-            <h1 class="font-semibold text-teal-600">$<span id="expenses">${expenses}</span></h1>
+            <h1 id="expense-name" class="font-semibold text-teal-600 ml-2">${expenseName}</h1>
+            <h1 class="font-semibold text-teal-600">$<span id="expense">${expense}</span></h1>
                             
             <div class="flex gap-2 items-center">
 
@@ -42,14 +42,14 @@ function addExpensesList(expensesName, expenses){
     // Edit Button's Functionality
     item.querySelector('#edit-btn').addEventListener('click', function() {
     
-        const expensesNameInput = document.getElementById('expenses-name-input-field');
-        const expensesInput = document.getElementById('expenses-input-field');
+        const expenseNameInput = document.getElementById('expense-name-input-field');
+        const expenseInput = document.getElementById('expense-input-field');
     
-        expensesNameInput.value = expensesName;
-        expensesInput.value = expenses;
+        expenseNameInput.value = expenseName;
+        expenseInput.value = expense;
         
-        addAmount('total-balance',expenses)
-        addExpenses('total-expenses',expenses)
+        addAmount('total-balance',expense)
+        addExpense('total-expense',expense)
         
         item.remove();
     
@@ -60,8 +60,8 @@ function addExpensesList(expensesName, expenses){
 
         item.remove()
 
-        addAmount('total-balance',expenses)
-        addExpenses('total-expenses',expenses)
+        addAmount('total-balance',expense)
+        addExpense('total-expense',expense)
 
     })
 
