@@ -1,14 +1,16 @@
+// Expenses List Creating Function
 function addExpensesList(expensesName, expenses){
 
     const itemContainer = document.getElementById('expenses-list');
-   const item = document.createElement('div');
+    const item = document.createElement('div');
 
     item.classList.add('bg-teal-50', 'p-4', 'rounded-md', 'flex', 'flex-col', 'gap-2', 'mb-5')
 
+    // Date: dd/mm/year
     const date = new Date();
     const dateString = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
-
+    // Expense List
     item.innerHTML = `
     
         <h1 class="font-semibold text-teal-600 text-lg ml-3">${dateString}</h1>
@@ -36,6 +38,8 @@ function addExpensesList(expensesName, expenses){
 
     itemContainer.appendChild(item);
     
+
+    // Edit Button's Functionality
     item.querySelector('#edit-btn').addEventListener('click', function() {
     
         const expensesNameInput = document.getElementById('expenses-name-input-field');
@@ -51,6 +55,7 @@ function addExpensesList(expensesName, expenses){
     
     });
 
+    // Delete Button's Functionality
     item.querySelector('#delete-btn').addEventListener('click', function(){
 
         item.remove()

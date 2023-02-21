@@ -1,3 +1,4 @@
+// Get Expenses & Budget Amount
 function getInputFieldValue(element){
 
     const input= document.getElementById(element)
@@ -12,6 +13,7 @@ function getInputFieldValue(element){
 
 }
 
+// Get Expenses Title
 function getInputTitle(element){
 
     const input= document.getElementById(element)
