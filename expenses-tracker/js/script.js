@@ -16,6 +16,6 @@ document.getElementById('add-expenses-btn').addEventListener('click', function()
 
     const expenses = getInputFieldValue('expenses-input-field')
 
-    setTotal('total-expenses',expenses)
+    setTitleName(expensesName)
 
 })
