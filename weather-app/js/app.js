@@ -32,6 +32,27 @@ const showWeatherData = (data) => {
         image.setAttribute("src","./images/haze.png")
 
     }
+    if(weather === "Clouds"){
+
+        image.setAttribute("src","./images/Clouds.png")
+
+    }
+    if(weather === "Rain"){
+
+        image.setAttribute("src","./images/Rain.png")
+
+    }
+    if(weather === "Clear"){
+
+        image.setAttribute("src","./images/sun.png")
+
+    }
+    if(weather === "Snow"){
+
+        image.setAttribute("src","./images/snow.png")
+
+    }
+    
 
 }
 
