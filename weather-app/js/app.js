@@ -22,10 +22,16 @@ const loadWeatherData = async(cityName) => {
 const showWeatherData = (data) => {
 
     console.log(data)
-
+    const image = document.getElementById('img')
     const city = document.getElementById('city-name').innerText = data.name
     const temp = document.getElementById('temp').innerText = (data.main.temp).toFixed(1)
     const weather = document.getElementById('weather').innerText = data.weather[0].main
+
+    if(weather === "Haze"){
+
+        image.setAttribute("src","./images/haze.png")
+
+    }
 
 }
 
