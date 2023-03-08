@@ -57,12 +57,26 @@ const showWeatherData = (data) => {
 }
 
 document.getElementById('city-btn').addEventListener('click', function(){
+        
+        const city = document.getElementById('city-field');
 
-    const city = document.getElementById('city-field');
-
-    loadWeatherData(city.value);
-    city.value = '';
+        loadWeatherData(city.value);
+        city.value = '';
 
 })
+
+document.getElementById('city-field').addEventListener('keypress', function(event) {
+
+    if (event.key === 'Enter') {
+
+        const city = document.getElementById('city-field');
+        
+        loadWeatherData(city.value);
+        city.value = '';
+
+    }
+
+});
+  
 
 loadWeatherData('Dhaka')
