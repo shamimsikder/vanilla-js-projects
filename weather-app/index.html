@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Weather App</title>
-
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="style.css">
     
     <!--Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,9 +19,25 @@
 
 </head>
 
-<body class="">
+<body class="bg-[#58bac9] w-full max-w-7xl mx-auto">
+
+    <header class="flex justify-center items-center gap-2 mt-20 mb-20">
+
+        <input id="city-field" class="px-3 py-2 outline-none rounded-md" type="text" placeholder="Enter City Name">
+        <button id="city-btn" class="px-3 py-2 outline-none rounded-md text-white border-2 border-white hover:border-black hover:text-black">Search</button>
+
+    </header>
 
     <main>
+
+        <section class="text-center">
+
+            <h1 class="text-white text-7xl mb-5">4<sup>&deg;C</sup></h1>
+ 
+            <h1 class="text-white text-3xl mb-2">City Name</h1>
+            <p class="text-white text-xl">Cloudy</p>
+
+        </section>
 
     </main>
     
