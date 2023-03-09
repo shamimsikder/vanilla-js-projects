@@ -1,4 +1,4 @@
-const API_KEY = 'db8e45b7ea4d867aea193ac7b43d7b04';
+const API_KEY = ''; // Enter API Key From api.openweathermap.org
 
 const loadWeatherData = async(cityName) => {
 
