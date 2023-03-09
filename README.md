@@ -21,6 +21,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Breathing Exercise](https://breathing-exercise.netlify.app/)
  - [Expense Tracker](https://expense-tracker2023.netlify.app/)
  - [Exchange Rate Calculator](https://exchange-rate-calculator23.netlify.app/)
+ - [Weather App](https://weather-app2023.netlify.app/)
 
 ## Screenshots
 
