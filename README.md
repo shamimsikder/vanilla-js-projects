@@ -22,6 +22,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Expense Tracker](https://expense-tracker2023.netlify.app/)
  - [Exchange Rate Calculator](https://exchange-rate-calculator23.netlify.app/)
  - [Weather App](https://weather-app2023.netlify.app/)
+ - [Typing Game](https://typeracerz.netlify.app/)
 
 ## Screenshots
 
@@ -54,6 +55,9 @@ A collection of small and simple projects built with vanilla JavaScript.
  
  ### Exchange Rate Calculator
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Exchange%20Rate%20Calculator.PNG)
+ 
+ ### Typing Game
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Typeracerz.PNG)
 
  
  ## Getting Started
