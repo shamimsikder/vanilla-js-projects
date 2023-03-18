@@ -23,6 +23,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Exchange Rate Calculator](https://exchange-rate-calculator23.netlify.app/)
  - [Weather App](https://weather-app2023.netlify.app/)
  - [Typing Game](https://typeracerz.netlify.app/)
+ - [Movie Seat Booking](https://movie-seat-booking23.netlify.app/)
 
 ## Screenshots
 
@@ -58,6 +59,9 @@ A collection of small and simple projects built with vanilla JavaScript.
  
  ### Typing Game
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Typeracerz.PNG)
+ 
+ ### Movie Seat Booking
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Movie%20Seats%20Booking.png)
 
  
  ## Getting Started
