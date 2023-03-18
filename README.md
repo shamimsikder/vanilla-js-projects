@@ -24,6 +24,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Weather App](https://weather-app2023.netlify.app/)
  - [Typing Game](https://typeracerz.netlify.app/)
  - [Movie Seat Booking](https://movie-seat-booking23.netlify.app/)
+ - [Book List](https://book-list23.netlify.app/)
 
 ## Screenshots
 
@@ -62,6 +63,9 @@ A collection of small and simple projects built with vanilla JavaScript.
  
  ### Movie Seat Booking
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Movie%20Seats%20Booking.png)
+ 
+  ### Book List
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Book%20List.png)
 
  
  ## Getting Started
