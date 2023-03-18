@@ -26,16 +26,15 @@ document.getElementById('btn').addEventListener('click', function(){
         ${isbn.value}
         </td>
         <td class="px-3 py-1 text-center  text-orange-500">
-        ${price.value}
+        $${price.value}
         </td>
         <td class="px-3 py-1 text-center  text-orange-500">
-        <i class="fa-solid fa-trash"></i>
+        <i onclick="removeData()" class="fa-solid fa-trash"></i>
         </td>
 
         `
 
         tableData.appendChild(tr)
-
 
    }
 
@@ -48,6 +47,12 @@ document.getElementById('btn').addEventListener('click', function(){
       })
 
    }
+
+   name.value = ''
+   author.value = ''
+   publisher.value = ''
+   isbn.value = ''
+   price.value = ''
 
 })
 
