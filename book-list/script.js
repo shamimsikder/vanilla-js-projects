@@ -9,8 +9,10 @@ document.getElementById('btn').addEventListener('click', function(){
     const tableData = document.getElementById('tdata')
     const tr = document.createElement('tr')
 
-    tr.innerHTML = `
-    
+   if(validation(name.value, author.value, publisher.value, isbn.value, price.value)){
+
+        tr.innerHTML = `
+        
         <td class="px-3 py-1 text-center  text-orange-500">
         ${name.value}
         </td>
@@ -29,12 +31,38 @@ document.getElementById('btn').addEventListener('click', function(){
         <td class="px-3 py-1 text-center  text-orange-500">
         <i class="fa-solid fa-trash"></i>
         </td>
-    
-    `
 
-    tableData.appendChild(tr)
+        `
+
+        tableData.appendChild(tr)
+
+
+   }
+
+   else{
+
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
+
+   }
 
 })
+
+function validation(name, author, publisher, isbn, price){
+
+    if(name === '' || author === '' || publisher === '' || isbn === '' || price === ''){
+
+        return false
+
+    }
+
+    return true
+
+}
 
                
                     
