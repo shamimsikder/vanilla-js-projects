@@ -65,7 +65,7 @@ A collection of small and simple projects built with vanilla JavaScript.
  ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Movie%20Seats%20Booking.png)
  
   ### Book List
- ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Book%20List.png)
+ ![](https://github.com/shamimsikder/vanilla-js-projects/blob/main/images/Book_List.png)
 
  
  ## Getting Started
