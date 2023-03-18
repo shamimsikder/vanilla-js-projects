@@ -11,13 +11,16 @@
     <!--Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
 
+     <!--Font Awesome CDN-->
+     <script src="https://kit.fontawesome.com/10abd8c763.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body class="flex justify-center items-center">
+<body>
     
     <main>
 
-        <h1 class="text-7xl mt-20">My <span class="text-orange-500">Book</span> List</h1>
+        <h1 class="text-7xl mt-20 text-center">My <span class="text-orange-500">Book</span> List</h1>
 
         <section class="w-full max-w-5xl mx-auto flex flex-col mt-20 gap-4">
 
@@ -37,8 +40,34 @@
                 <label class="text-xl font-semibold w-full" for="">Price</label>
                 <input type="text" class="px-3 py-1 outline-none border-2 border-orange-500 rounded-md w-full" placeholder="Enter Book Price">    
             </div>
+            <div>
+                <label class="text-xl font-semibold w-full" for="">ISBN</label>
+                <input type="text" class="px-3 py-1 outline-none border-2 border-orange-500 rounded-md w-full" placeholder="Enter ISBN">    
+            </div>
 
-            <button  class="px-3 py-1  bg-orange-500 text-white rounded-md w-full">Submit</button>
+            <button class="px-3 py-1  bg-orange-500 text-white rounded-md w-full">Submit</button>
+
+        </section>
+
+        <section>
+
+            <table class="w-full max-w-5xl mx-auto  text-white mt-10">
+                
+                <thead class="bg-orange-500 text-xl uppercase font-medium">
+                    <tr>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">Book Name</th>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">Author Name</th>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">Publisher</th>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">ISBN</th>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">Price</th>
+                        <th scope="col" class="px-3 py-1 text-center tracking-wider">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody class="bg-slate-200 "></tbody>
+
+            </table>
+
         </section>
        
     </main>
