@@ -36,6 +36,8 @@ document.getElementById('btn').addEventListener('click', function(){
 
         tableData.appendChild(tr)
 
+        saveToLocalStorage(name.value, author.value, publisher.value, isbn.value, price.value)
+
    }
 
    else{
@@ -69,8 +71,49 @@ function validation(name, author, publisher, isbn, price){
 }
 
 const removeData = (element) => {
+
     const remove = element.parentNode.parentNode
     remove.parentNode.removeChild(remove)
+
+}
+
+const saveToLocalStorage = (name, author, publisher, isbn, price) => {
+
+    const previousData = JSON.parse(localStorage.getItem('books'))
+
+    let books = []
+    let data = {name, author, publisher, isbn, price}
+
+    if(previousData){
+
+        const isThisBookListed = previousData.find(bk => bk.isbn === isbn)
+
+        if(isThisBookListed){
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This book already listed',
+            })
+
+        }
+
+        else{
+
+            books.push(...previousData, data)
+            localStorage.setItem("books", JSON.stringify(books))
+
+        }
+
+    }
+
+    else{
+
+        books.push(data)
+        localStorage.setItem("books", JSON.stringify(books))
+
+    }
+
 }
                
                     
