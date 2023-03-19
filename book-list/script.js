@@ -29,7 +29,7 @@ document.getElementById('btn').addEventListener('click', function(){
         $${price.value}
         </td>
         <td class="px-3 py-1 text-center  text-orange-500">
-        <i onclick="removeData()" class="fa-solid fa-trash"></i>
+        <i onclick="removeData(this)" class="fa-solid fa-trash cursor-pointer"></i>
         </td>
 
         `
@@ -68,6 +68,10 @@ function validation(name, author, publisher, isbn, price){
 
 }
 
+const removeData = (element) => {
+    const remove = element.parentNode.parentNode
+    remove.parentNode.removeChild(remove)
+}
                
                     
                     
