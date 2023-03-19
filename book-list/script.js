@@ -115,6 +115,51 @@ const saveToLocalStorage = (name, author, publisher, isbn, price) => {
     }
 
 }
+
+const showPreviousData = () => {
+
+    const previousData = JSON.parse(localStorage.getItem('books'))
+
+    console.log(previousData)
+
+    
+
+
+    previousData.forEach(data => {
+
+        const tableData = document.getElementById('tdata')
+    const tr = document.createElement('tr')
+
+        tr.innerHTML = `
+        
+        <td class="px-3 py-1 text-center  text-orange-500">
+        ${data.name}
+        </td>
+        <td class="px-3 py-1 text-center  text-orange-500">
+        ${data.author}
+        </td>
+        <td class="px-3 py-1 text-center  text-orange-500">
+        ${data.publisher}
+        </td>
+        <td class="px-3 py-1 text-center  text-orange-500">
+        ${data.isbn}
+        </td>
+        <td class="px-3 py-1 text-center  text-orange-500">
+        $${data.price}
+        </td>
+        <td class="px-3 py-1 text-center  text-orange-500">
+        <i onclick="removeData(this)" class="fa-solid fa-trash cursor-pointer"></i>
+        </td>
+
+        `
+
+        tableData.appendChild(tr)
+
+    })
+
+}
+
+showPreviousData()
                
                     
                     
