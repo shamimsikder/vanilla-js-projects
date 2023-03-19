@@ -29,7 +29,7 @@ document.getElementById('btn').addEventListener('click', function(){
         $${price.value}
         </td>
         <td class="px-3 py-1 text-center  text-orange-500">
-        <i onclick="removeData(this)" class="fa-solid fa-trash cursor-pointer"></i>
+        <i onclick="removeData(this, '${isbn.value}')" class="fa-solid fa-trash cursor-pointer"></i>
         </td>
 
         `
@@ -70,10 +70,12 @@ function validation(name, author, publisher, isbn, price){
 
 }
 
-const removeData = (element) => {
+const removeData = (element, isbn) => {
 
     const remove = element.parentNode.parentNode
     remove.parentNode.removeChild(remove)
+    
+    removeLocalStorageData(isbn)
 
 }
 
@@ -122,13 +124,10 @@ const showPreviousData = () => {
 
     console.log(previousData)
 
-    
-
-
-    previousData.forEach(data => {
+    previousData?.forEach(data => {
 
         const tableData = document.getElementById('tdata')
-    const tr = document.createElement('tr')
+        const tr = document.createElement('tr')
 
         tr.innerHTML = `
         
@@ -148,7 +147,7 @@ const showPreviousData = () => {
         $${data.price}
         </td>
         <td class="px-3 py-1 text-center  text-orange-500">
-        <i onclick="removeData(this)" class="fa-solid fa-trash cursor-pointer"></i>
+        <i onclick="removeData(this, '${data.isbn}')" class="fa-solid fa-trash cursor-pointer"></i>
         </td>
 
         `
@@ -156,6 +155,18 @@ const showPreviousData = () => {
         tableData.appendChild(tr)
 
     })
+
+}
+
+const removeLocalStorageData = (isbn) => {
+
+    console.log(isbn)
+
+    const previousData = JSON.parse(localStorage.getItem('books'))
+
+    const remainingData = previousData.filter(bk => bk.isbn !== isbn)
+
+    localStorage.setItem("books", JSON.stringify(remainingData))
 
 }
 
