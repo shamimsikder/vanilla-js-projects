@@ -11,19 +11,19 @@ A collection of small and simple projects built with vanilla JavaScript.
 
 ## Projects List
 
- - [Basic Calculator](https://js-basic-calculator23.netlify.app/)
- - [Form Validator](https://js-form-validator23.netlify.app/)
- - [Menu Slider & Modal](https://menu-slider-and-modal23.netlify.app/)
- - [Gradient Generator](https://gradient-generator23.netlify.app/)
+ - [Basic Calculator (Clone Project)](https://js-basic-calculator23.netlify.app/)
+ - [Form Validator (Clone Project)](https://js-form-validator23.netlify.app/)
+ - [Menu Slider & Modal (Clone Project)](https://menu-slider-and-modal23.netlify.app/)
+ - [Gradient Generator (Clone Project)](https://gradient-generator23.netlify.app/)
  - [BMI Calculator](https://bmi-calculator23.netlify.app/)
  - [Shopping List](https://shopping-list23.netlify.app/)
  - [Text Editor](https://text-editor23.netlify.app/)
- - [Breathing Exercise](https://breathing-exercise.netlify.app/)
+ - [Breathing Exercise (Clone Project)](https://breathing-exercise.netlify.app/)
  - [Expense Tracker](https://expense-tracker2023.netlify.app/)
- - [Exchange Rate Calculator](https://exchange-rate-calculator23.netlify.app/)
+ - [Exchange Rate Calculator (Clone Project)](https://exchange-rate-calculator23.netlify.app/)
  - [Weather App](https://weather-app2023.netlify.app/)
- - [Typing Game](https://typeracerz.netlify.app/)
- - [Movie Seat Booking](https://movie-seat-booking23.netlify.app/)
+ - [Typing Game (Clone Project)](https://typeracerz.netlify.app/)
+ - [Movie Seat Booking (Clone Project)](https://movie-seat-booking23.netlify.app/)
  - [Book List](https://book-list23.netlify.app/)
 
 ## Screenshots
