@@ -6,6 +6,7 @@ A collection of small and simple projects built with vanilla JavaScript.
 ## Table of Contents
 
 * Projects List
+* Tools Used
 * Screenshots
 * Getting Started
 
