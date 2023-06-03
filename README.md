@@ -27,6 +27,13 @@ A collection of small and simple projects built with vanilla JavaScript.
  - [Movie Seat Booking (Clone Project)](https://movie-seat-booking23.netlify.app/)
  - [Book List](https://book-list23.netlify.app/)
 
+## Tools Used
+
+* HTML
+* CSS
+* Tailwind CSS
+* JavaScript
+
 ## Screenshots
 
  ### Calculator
