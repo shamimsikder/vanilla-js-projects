@@ -12,6 +12,8 @@ A collection of small and simple projects built with vanilla JavaScript.
 
 ## Projects List
 
+### Clone Projects
+
  - [Basic Calculator (Clone Project)](https://js-basic-calculator23.netlify.app/)
  - [Form Validator (Clone Project)](https://js-form-validator23.netlify.app/)
  - [Menu Slider & Modal (Clone Project)](https://menu-slider-and-modal23.netlify.app/)
